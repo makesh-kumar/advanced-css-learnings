@@ -1,0 +1,51 @@
+.container {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+.item {
+  border: 2px solid black;
+  width: 50px;
+  padding: 10px;
+  margin: 40px 5px;
+  background-color: skyblue;
+  color: white;
+  cursor: pointer;
+}
+
+.item1 {
+  /* syntax
+transistion: <property> <duration> <transistion-timing-function> <delay>
+*/
+  transition: transform 4s ease 3s;
+}
+.item2 {
+  transition: transform 4s linear;
+}
+.item3 {
+  transition: transform 4s ease-in;
+}
+.item4 {
+  transition: transform 4s ease-out;
+}
+.item5 {
+  transition: transform 4s ease-in-out;
+}
+
+.item:hover {
+  transform: translate(1000px, 0);
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: yellow;
+  /* transition: all 2s; */
+  transition: border 12s ease-in 3s;
+}
+
+button:hover {
+  width: 200px;
+  background-color: red;
+  border: 2px solid black;
+}
